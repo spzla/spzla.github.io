@@ -1,0 +1,404 @@
+/* What are you even looking for */
+
+/* CSS written by Fetysz (#197644) */
+
+/* Vars */
+
+  :root {
+    --bg: url('https://cdn.discordapp.com/attachments/647556737507000334/740307979118837951/et6ow3dkxll31.jpg');
+    --logo: url('https://fetysz.github.io/lioden/Liszczowowo/img/logo-full-2.png');
+    
+    --lime-0: rgba(124, 171, 24, 1);
+    --lime-1: rgba(124, 171, 24, .15);
+    --lime-2: rgba(124, 171, 24, .3);
+    --lime-3: rgba(124, 171, 24, .5);
+    --lime-4: rgba(124, 171, 24, .75);
+  }
+
+/* Background */
+
+  body {
+    background: var(--bg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 100vh;
+
+    color: #ddd;
+  }
+
+
+/* Content */
+
+  /* URLs */
+
+    a:link, a:visited, a:active {
+      color: #aaa;
+    }
+
+    a:hover {
+      color: #eee;
+    }
+
+  /* Topbar */
+
+    .topbar {
+      background: var(--lime-3);
+      backdrop-filter: blur(4px);
+
+      border-radius: 0 0 8px 8px;
+
+      width: 95%;
+    }
+
+  /* Navbar */
+
+    .navbar {
+      background: var(--lime-3);
+
+      border-radius: 8px 8px 0 0;
+    }
+
+    /* Logo */
+
+      img[alt="Lioden"] {
+        content: url('https://fetysz.github.io/lioden/Liszczowowo/img/logo-full-2.png');
+      }
+
+    /* Links */
+
+      .navbar-default .navbar-nav > li > a {
+        color: #000
+      }
+      
+      .navbar-default .navbar-nav>li>a:hover, 
+      .navbar-default .navbar-nav>li>a:focus {
+        background: var(--lime-2)
+
+        color: #000;
+      }
+
+  /* Main thing */
+
+    .main {
+      background: transparent;
+      backdrop-filter: blur(4px);
+
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+      width: 85%;
+    }
+
+    /* Alerts */
+
+      /* Success */
+
+        .alert-success {
+          background: var(--lime-2)
+
+          border-color: var(--lime-2)
+
+          color: var(--lime-0);
+        }
+
+      /* Danger */
+
+        .alert-danger {
+          background: rgba(241, 95, 97, .3);
+
+          border-color: rgba(241, 95, 97, .3);
+
+          color: rgba(241, 95, 97, 1);
+        }
+
+    /* Den thongs */  
+
+      .row:nth-child(2) {
+        background: rgba(0, 0, 0, .3);
+      }
+
+      /* Den header */
+
+        .floatright + h1 {
+          color: #ddd;
+          font-weight: 700;
+          text-align: center;
+          text-transform: capitalize;
+        }
+
+      /* Lion Image */
+
+        #lion_image > div > img {
+          border-radius: 8px;
+        }
+
+      /* Buttons */
+
+        .select-control, button.button, input[type="button"], input[type="submit"], input[type="reset"] {
+          background: var(--lime-3);
+
+          border: 1px solid var(--lime-3);
+
+          color: #000;
+          text-shadow: 1px 1px 1px var(--lime-3);
+        }
+
+        .select-control:hover, button.button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+          background: var(--lime-4);
+
+          border: 1px solid transparent;
+
+          color: #000;
+          text-shadow: none;
+        }
+
+      /* Cards */
+
+        div .left {
+          background: var(--lime-2)
+        }
+
+      /* Bookmark */
+
+        .breadcrumb {
+          background: var(--lime-3);
+        }
+
+      /* Tables */
+
+        .table {
+          border: none;
+        }
+
+        .table .top, .table th {
+          background: var(--lime-3);
+
+          border-radius: 8px 8px 0 0;
+        }
+
+        .table .bottom {
+          background: var(--lime-3);
+
+          border-radius: 0 0 8px 8px;
+        }
+
+        .table .left {
+          background: var(--lime-1);
+        }
+
+        .table td.right,
+        .table tr.right > td[style*="width: 200px;"] {
+          background: rgba(157, 204, 57, .15);
+        }
+
+        .table .right_odd {
+          background: rgba(157, 204, 57, .15);
+        }
+
+        .right_cub {
+          background: rgba(157, 204, 57, .15);
+        }
+
+        .table .left + td {
+          background: var(--lime-1);
+        } 
+
+        /* Inner table */
+
+          .inner-table .left {
+            background: var(--lime-3);
+          }
+
+          .inner-table .right {
+            background: rgba(157, 204, 57, .5);
+          }
+        
+        /* Links */
+
+          .table .top a:link, .table .top a:active, .table .top a:visited, .table th a:link, .table th a:active, .table th a:visited {
+            color: #aaa;
+          }
+
+          .table .top a:hover, .table th a:hover {
+            color: #eee;
+          }
+    
+      /* Grids */
+
+        /* Cave */
+
+          .cave-grid {
+            background: var(--lime-3);
+
+            border: 0;
+          }
+        
+        /* Mound */
+
+          .mound-grid {
+            background: var(--lime-3);
+
+            border: 0;
+          }
+
+          .mound-grid > img {
+            border-radius: 8px;
+          }
+      
+      /* Dynstaites and those other */
+
+        .dynastylist img {
+          border-radius: 8px;
+        }
+
+      /* Account options */
+
+        /* Cards */
+
+          .item {
+            background: var(--lime-1);
+
+            border: 1px solid transparent;
+            border-radius: 8px;
+
+            color: #ddd;
+          }
+
+          .item-header {
+            background: var(--lime-1);
+
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+            color: unset;
+          }
+
+      /* Input */
+
+        input[type="text"], 
+        input[type="password"] {
+          background: var(--lime-1);
+          border: 2px inset transparent
+        }
+
+        /* textarea */
+
+          textarea {
+            background: var(--lime-1);
+            border: 1px solid transparent;
+            color: #ddd;
+          }
+
+        /* chooser */
+
+          select {
+            background: var(--lime-1);
+            border: 1px solid transparent;
+            color: #ddd;
+          }
+
+    /* Right column */
+
+      .col-md-9 {
+        background: transparent;
+      }
+
+      .sidebar h3,
+      h3 {
+        color: #ddd;
+      }
+
+      /* Panels */
+
+        .panel {
+          background: var(--lime-1);
+          border-radius: 8px;
+        }
+
+        .col-md-3 .panel {
+          border: 1px solid transparent;
+          box-shadow: none;
+        }
+
+        /* Progress bars */
+
+          .progress {
+            background: var(--lime-1);
+          }
+
+          .progress div {
+            color: #ddd;
+            text-shadow: 1px 1px 1px #aaa;
+          }
+
+      /* Chat */
+
+        .s-chat-sidebar #label_currentChannel {
+          background: var(--lime-1);
+
+          border: 1px solid transparent;
+          border-radius: 8px;
+        } 
+
+        #chatMessageContainer {
+          border: 1px solid transparent;
+        }
+
+        #chatMessagePinned.s-chat-message__pinned {
+          background: var(--lime-1) url(//static.lioden.com/images/layout/sticky.png) no-repeat 10px 6px;
+          color: #ddd;
+          border-bottom: 2px solid transparent!important;
+        }
+
+        .s-chat-message:nth-child(odd) {
+          background: var(--lime-1);
+        }
+
+        .s-chat-message:nth-child(even) {
+          background: rgba(124, 171, 24, .25);
+        }
+
+        /* #fra_chatContainer .modMessage, .s-chat-message_ */
+
+        /* Emote Picker */
+
+          .emoteList {
+            background: var(--lime-3);
+
+            border: 2px solid transparent;
+            border-radius: 8px;
+          }
+
+          .s-chat-sidebar .emoteList::before {
+            border-top-color: transparent;
+
+          }
+
+          .s-chat-sidebar .emoteList::after {
+            border-top-color: var(--lime-3);
+          }
+
+/* Cave Exc. */
+
+  .featured-lion,
+  .featured-lion > img {
+    border-radius: 8px;
+  }
+
+/* Scrollbar */
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+/* Footer */
+
+  /* ItS mE */
+
+    .container.footer:before {
+      content: 'CSS by Fetysz (#197644)';
+      margin-right: auto;
+      margin-left: auto;
+   }

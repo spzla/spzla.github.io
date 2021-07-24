@@ -1,0 +1,35 @@
+:root {
+  --color1: #faf3f3;
+  --color2: #e1e5ea;
+  --color3: #a7bbc7;
+  --color4: #da7f8f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Comic Sans MS;
+  background: var(--color2);
+}
+
+div#leftWrapper {
+  width: 384px;
+  position: absolute;
+  left: calc(-384px + 32px);
+  top: 0;
+  bottom: 0;
+  background: var(--color3);
+
+  box-shadow: 0 0 0 0 var(--color3);
+  transition: left 1000ms ease-in-out;
+}
+
+div#leftWrapper:not(:hover) {
+  left: 0;
+}
+
+ul#menu {
+  
+}
